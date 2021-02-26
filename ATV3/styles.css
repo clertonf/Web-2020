@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background: #1E90FF;
+	font-family: 'Hind Madurai', sans-serif;
+}
+
+.h1{
+	color:white;
+	text-align: center;
+	
+}
+
+.p{
+	text-align: center;
+}
+
+.pStyle{
+	color:yellow;
+}
+.pStyle2{
+	color:green;
+}
+.pStyle3{
+	color:black;
+}
+
+.container{
+	position: relative;
+	max-width: 800px;
+	padding: 10px;
+	margin: 50px auto;
+	box-shadow: 5px 5px 6px -2px rgba(0, 0, 0 , 0.8);
+}
+.addTarefa{
+	width: 100%;
+	display: flex;
+	padding: 10px 0;
+}
+.addTarefa > input[type="text"]{
+	width: 90%;
+	background-color: white;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 22px;
+	outline: none;
+	
+}
+.addTarefa button{
+	margin: 0 10px;
+	background: rgb(29, 80, 138);
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.notCompleta, .Completa{
+	margin: 5px 0;
+	padding: 20px;
+}
+h3{
+	font-size: 28px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+ol{
+	list-style: none;
+	counter-reset: my-counter;
+}
+ol li{
+	width: 100%;
+	padding: 18px;
+	margin: 5px 0;
+	color: white;
+	background: #e96969bb;
+	font-size: 22px;
+	counter-increment: my-counter;
+	border-radius: 15px;
+}
+ol.Completa li{
+	background: #00ff62;
+	color: black;
+	border-radius: 15px;
+}
+ol li::before{
+	content: counter(my-counter);
+	background: #231381;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 2rem;
+	text-align: center;
+	color: #fff;
+	margin-right: 0.5rem;
+	
+}
+li button{
+	float: right;
+	padding: 5px;
+	font-size: 28px;
+	line-height: 28px;
+	margin-right: 15px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

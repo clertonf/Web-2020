@@ -1,0 +1,92 @@
+<!-- CADASTRO -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Clerton Filho</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="links">
+      <a> Projeto adaptado - Des Web </a>
+      <p> Exemplo de formulário de pesquisa (Survey)</p>
+
+    </div>
+  </header>
+
+  <form action="" method="post"class="card">
+    <section class="details">
+      <!-- <h3>Cadastro</h3> -->
+
+      <div class="item">
+        <div>Nome:</div>
+        <div>
+          <input type="text" name="name" placeholder="Coloque seu nome" required/>
+        </div>
+      </div>
+
+      <div class="item">
+        <div>Email:</div>
+        <div>
+          <input type="email" name="email" placeholder="Coloque seu Email..." required/>
+        </div>
+      </div>
+
+      <div class="item">
+        <div>Idade: <font size="2">(opcional)</font></div>
+        <div>
+          <input type="number" name="numbers" placeholder="Idade" />
+        </div>
+      </div>
+
+    <div class="item">
+      <div>Qual a melhor opção descreve o seu estado atual?</div>
+      <select id="combobox-select">
+        <option>Selecione a ocupação</option>
+        <option>Estudante</option>
+        <option>CLT</option>
+        <option>Prefiro não dizer</option>
+        <option>Outro</option>
+     </select>
+     
+    </div>
+      <div class="item">
+        <div>Você recomendaria este projeto?</div>
+        <div>
+          <span> <input type="radio" name="opcao" value="op1" />Com certeza!!</span> </br>
+          <span> <input type="radio" name="opcao" value="op2"/>Talvez</span> </br>
+          <span> <input type="radio" name="opcao" value="op3"/>Não sei</span>
+        </div>
+      </div>
+      
+        <div class="item">
+          <!-- Inline o font-size -->
+          <div>O que você gostaria de melhorar?  <font size="1">(Selecione quantos quiser.)</font> </div>
+          
+          <div>
+            <span> <input type="checkbox" />Ter mais tempo para estudar</span> 
+            <span> <input type="checkbox" />Estudar mais o que gosto</span> </br> 
+            <span> <input type="checkbox" />Gerência de projetos</span> </br>
+            <span> <input type="checkbox" />NodeJS</span>
+          </div>
+
+      <div class="item">  
+        <div>Algum comentário ou sugestão? </div>
+        
+             <textarea placeholder="Insira seu comentário ou sugestão aqui">
+        </textarea>
+      </div>
+
+      <div class="item">
+          <input type="submit" value="Enviar" id="botao">
+      </div>
+
+    </section>
+  </form>
+</body>
+
+</html>
